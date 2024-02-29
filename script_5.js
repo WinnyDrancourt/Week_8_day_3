@@ -20,6 +20,7 @@ function borrowedOneTime(books) {
 }
 console.log("All borrowed ?");
 console.log(borrowedOneTime(books));
+document.getElementById("true").innerHTML = borrowedOneTime(books);
 
 //What is the most borrowed book ?
 function sortBorrowed(books) {
@@ -31,9 +32,18 @@ function sortBorrowed(books) {
 }
 console.log("most borrowed");
 console.log(sortBorrowed(books)[0]);
+const resultMost = document.getElementById("most");
+resultMost.innerHTML =
+  "<div>" + JSON.stringify(sortBorrowed(books)[0], null, 2) + "</div>";
+
 //What is the least borrowed book ?
 console.log("least borrowed");
 console.log(sortBorrowed(books)[sortBook.length - 1]);
+const resultLeast = document.getElementById("least");
+resultLeast.innerHTML =
+  "<div>" +
+  JSON.stringify(sortBorrowed(books)[sortBook.length - 1], null, 2) +
+  "</div>";
 
 //Find the book with id : 873495
 function findById(books) {
@@ -42,6 +52,9 @@ function findById(books) {
 }
 console.log("Find 873495");
 console.log(findById(books));
+const resultFind = document.getElementById("find");
+resultFind.innerHTML =
+  "<div>" + JSON.stringify(findById(books), null, 2) + "</div>";
 
 //Delete the book 133712
 function deleteById(books) {
@@ -50,6 +63,9 @@ function deleteById(books) {
 }
 console.log("delete 133712");
 console.log(deleteById(books));
+const resultDelete = document.getElementById("delete");
+resultDelete.innerHTML =
+  "<div>" + JSON.stringify(deleteById(books), null, 2) + "</div>";
 
 //Sort by alpha.
 function sortByAlpha(books) {
@@ -61,3 +77,6 @@ function sortByAlpha(books) {
 }
 console.log("Sort without 133712");
 console.log(sortByAlpha(books));
+const resultSortBook = document.getElementById("sortbook");
+resultSortBook.innerHTML =
+  "<div>" + JSON.stringify(sortByAlpha(books), null, 2) + "</div>";

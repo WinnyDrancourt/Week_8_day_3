@@ -1,6 +1,3 @@
-// User prompt
-const userInput = prompt("Chat with me !");
-
 // Compare and transform
 
 function compareTransform(userInput) {
@@ -17,3 +14,9 @@ function compareTransform(userInput) {
   }
 }
 console.log(compareTransform(userInput));
+
+function validInput7() {
+  let userInput = document.getElementById("userInput1").value;
+  let botResponse = compareTransform(userInput);
+  document.getElementById("botResponse").textContent = botResponse;
+}

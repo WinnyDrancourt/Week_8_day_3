@@ -73,7 +73,17 @@ function transform(group) {
 console.log("array = CCGUCGUUGCGCUACAGC ");
 console.log(splitThird1(firstArray));
 console.log(splitThird1(firstArray).map(transform));
+const resultFirstDna = document.getElementById("fdna");
+resultFirstDna.innerHTML =
+  "<div>" +
+  JSON.stringify(splitThird1(firstArray).map(transform), null, 2) +
+  "</div>";
 
 console.log("array = CCUCGCCGGUACUUCUCG ");
 console.log(splitThird2(secondArray));
 console.log(splitThird2(secondArray).map(transform));
+const resultSecondDna = document.getElementById("sdna");
+resultSecondDna.innerHTML =
+  "<div>" +
+  JSON.stringify(splitThird2(secondArray).map(transform), null, 2) +
+  "</div>";

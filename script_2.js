@@ -1,4 +1,4 @@
-// Ask for number by prompt
+// Ask for Number by prompt
 var num = prompt("Choisir un nombre pour calculer son factoriel :");
 
 // Convert num into Integer
@@ -12,3 +12,9 @@ function factorialize(num) {
   }
 }
 console.log(factorialize(num));
+
+function validInput2() {
+  let num = document.getElementById("num").value;
+  let facto = factorialize(num);
+  document.getElementById("facto").textContent = facto;
+}

@@ -28,6 +28,11 @@ function entrepreneursDesAnnees70(entrepreneurs) {
 }
 console.log("Born in 70's");
 console.log(entrepreneursDesAnnees70(entrepreneurs));
+const resultBorn = document.getElementById("born");
+resultBorn.innerHTML =
+  "<div>" +
+  JSON.stringify(entrepreneursDesAnnees70(entrepreneurs), null, 2) +
+  "</div>";
 
 //Array with first & last name
 function deleteYear(entrepreneurs) {
@@ -38,6 +43,9 @@ function deleteYear(entrepreneurs) {
 }
 console.log("First & Last Name");
 console.log(deleteYear(entrepreneurs));
+const resultFirstLast = document.getElementById("first");
+resultFirstLast.innerHTML =
+  "<div>" + JSON.stringify(deleteYear(entrepreneurs), null, 2) + "</div>";
 
 //Age of entrepreneur
 const actualYear = new Date().getFullYear();
@@ -49,6 +57,11 @@ function ageOfEntrepreneur(entrepreneurs, actualYear) {
 }
 console.log("Age !");
 console.log(ageOfEntrepreneur(entrepreneurs, actualYear));
+const resultAge = document.getElementById("age");
+resultAge.innerHTML =
+  "<div>" +
+  JSON.stringify(ageOfEntrepreneur(entrepreneurs, actualYear), null, 2) +
+  "</div>";
 
 //Sort by alpha last_name
 function sortLastName(entrepreneurs) {
@@ -60,3 +73,6 @@ function sortLastName(entrepreneurs) {
 }
 console.log("Sort by Alpha.");
 console.log(sortLastName(entrepreneurs));
+const resultSort = document.getElementById("sort");
+resultSort.innerHTML =
+  "<div>" + JSON.stringify(sortLastName(entrepreneurs), null, 2) + "</div>";

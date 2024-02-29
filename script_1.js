@@ -1,4 +1,5 @@
 function bonjourMonde() {
-  console.log("Bonjour Monde");
+  return "Bonjour Monde !";
 }
-bonjourMonde();
+console.log(bonjourMonde());
+document.getElementById("bonjour").textContent = bonjourMonde();
