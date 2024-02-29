@@ -5,17 +5,10 @@ var floor = prompt("Choisi un nombre d'etage");
 Number(floor);
 
 function pyramid(floor) {
-  for (let count = 0; count <= floor; count++) {
-    let str = "";
-    let i = 1;
-    for (let j = 1; j <= 2 * floor; ++j) {
-      if (i + j >= floor + 1 && i >= j - floor + 1) {
-        str += count.toString() + " ";
-        count++;
-      } else {
-        str += "  ";
-      }
-    }
-    console.log(str);
+  for (let count = 1; count <= floor; count++) {
+    let str = "#";
+    let space = " ";
+    console.log(space.repeat(floor - count) + str.repeat(count));
   }
 }
+console.log(pyramid(floor));
