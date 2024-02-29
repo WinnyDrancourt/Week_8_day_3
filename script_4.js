@@ -26,6 +26,7 @@ function entrepreneursDesAnnees70(entrepreneurs) {
     (entrepreneur) => entrepreneur.year >= 1970 && entrepreneur.year <= 1979,
   );
 }
+console.log("Born in 70's");
 console.log(entrepreneursDesAnnees70(entrepreneurs));
 
 //Array with first & last name
@@ -35,6 +36,7 @@ function deleteYear(entrepreneurs) {
     return rest;
   });
 }
+console.log("First & Last Name");
 console.log(deleteYear(entrepreneurs));
 
 //Age of entrepreneur
@@ -45,6 +47,7 @@ function ageOfEntrepreneur(entrepreneurs, actualYear) {
     return { ...entrepreneur, age };
   });
 }
+console.log("Age !");
 console.log(ageOfEntrepreneur(entrepreneurs, actualYear));
 
 //Sort by alpha last_name
@@ -55,4 +58,5 @@ function sortLastName(entrepreneurs) {
     return 0;
   });
 }
+console.log("Sort by Alpha.");
 console.log(sortLastName(entrepreneurs));

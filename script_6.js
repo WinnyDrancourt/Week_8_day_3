@@ -14,7 +14,6 @@ function splitThird1(firstArray) {
   }
   return transArray;
 }
-console.log(splitThird1(firstArray));
 
 // Transforme -CCUCGCCGGUACUUCUCG
 const secondArray = ["CCUCGCCGGUACUUCUCG"];
@@ -28,7 +27,6 @@ function splitThird2(secondArray) {
   }
   return transArray;
 }
-console.log(splitThird2(secondArray));
 
 //Transforme les groupes de 3 en acide :
 
@@ -72,7 +70,11 @@ function transform(group) {
 
 // Les resulats
 const transResult1 = splitThird1(firstArray).map(transform);
+console.log("array = CCGUCGUUGCGCUACAGC ");
+console.log(splitThird1(firstArray));
 console.log(transResult1);
 
 const transResult2 = splitThird2(secondArray).map(transform);
+console.log("array = CCUCGCCGGUACUUCUCG ");
+console.log(splitThird2(secondArray));
 console.log(transResult2);

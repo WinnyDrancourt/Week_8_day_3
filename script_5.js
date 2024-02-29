@@ -18,6 +18,7 @@ const books = [
 function borrowedOneTime(books) {
   return books.every((book) => book.rented > 0);
 }
+console.log("All borrowed ?");
 console.log(borrowedOneTime(books));
 
 //What is the most borrowed book ?
@@ -28,8 +29,10 @@ function sortBorrowed(books) {
     return 0;
   }));
 }
+console.log("most borrowed");
 console.log(sortBorrowed(books)[0]);
 //What is the least borrowed book ?
+console.log("least borrowed");
 console.log(sortBorrowed(books)[sortBook.length - 1]);
 
 //Find the book with id : 873495
@@ -37,6 +40,7 @@ function findById(books) {
   let bookId = 873495;
   return books.find((book) => book.id == bookId);
 }
+console.log("Find 873495");
 console.log(findById(books));
 
 //Delete the book 133712
@@ -44,6 +48,7 @@ function deleteById(books) {
   let bookId = 133712;
   return books.filter((book) => book.id !== bookId);
 }
+console.log("delete 133712");
 console.log(deleteById(books));
 
 //Sort by alpha.
@@ -54,4 +59,5 @@ function sortByAlpha(books) {
     return 0;
   });
 }
+console.log("Sort without 133712");
 console.log(sortByAlpha(books));
