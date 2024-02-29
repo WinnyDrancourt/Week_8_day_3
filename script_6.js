@@ -69,12 +69,11 @@ function transform(group) {
 }
 
 // Les resulats
-const transResult1 = splitThird1(firstArray).map(transform);
+
 console.log("array = CCGUCGUUGCGCUACAGC ");
 console.log(splitThird1(firstArray));
-console.log(transResult1);
+console.log(splitThird1(firstArray).map(transform));
 
-const transResult2 = splitThird2(secondArray).map(transform);
 console.log("array = CCUCGCCGGUACUUCUCG ");
 console.log(splitThird2(secondArray));
-console.log(transResult2);
+console.log(splitThird2(secondArray).map(transform));
