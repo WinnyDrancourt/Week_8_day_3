@@ -1,1 +1,4 @@
-console.log("Bonjour Monde");
+function bonjourMonde() {
+  console.log("Bonjour Monde");
+}
+bonjourMonde();
