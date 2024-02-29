@@ -23,7 +23,7 @@ const entrepreneurs = [
 // Born in 70's
 function entrepreneursDesAnnees70(entrepreneurs) {
   return entrepreneurs.filter(
-    (entrepreneurs) => entrepreneurs.year >= 1970 && entrepreneurs.year <= 1979,
+    (entrepreneur) => entrepreneur.year >= 1970 && entrepreneur.year <= 1979,
   );
 }
 console.log(entrepreneursDesAnnees70(entrepreneurs));
